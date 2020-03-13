@@ -2950,7 +2950,7 @@ LOAD d:/altium/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-at
                 0x000006c1       0x20 d:/altium/atollic/truestudio for stm32 9.3.0/armtools/bin/../lib/gcc/arm-atollic-eabi/6.3.1/armv7e-m/fpu/fpv5-d16/crtn.o
 OUTPUT(SD_H7_062.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x30366
+.debug_info     0x00000000    0x30365
  .debug_info    0x00000000     0x1f02 Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.o
  .debug_info    0x00001f02     0x1bd0 Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.o
  .debug_info    0x00003ad2     0x315a Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_eth.o
@@ -2971,12 +2971,12 @@ OUTPUT(SD_H7_062.elf elf32-littlearm)
  .debug_info    0x000231af     0x12ee Src\bsp_driver_sd.o
  .debug_info    0x0002449d      0xec1 Src\fatfs.o
  .debug_info    0x0002535e      0xbb8 Src\fatfs_platform.o
- .debug_info    0x00025f16     0x3e92 Src\main.o
- .debug_info    0x00029da8     0x1062 Src\sd_diskio.o
- .debug_info    0x0002ae0a     0x329a Src\stm32h7xx_hal_msp.o
- .debug_info    0x0002e0a4      0xf01 Src\stm32h7xx_it.o
- .debug_info    0x0002efa5     0x1339 Src\system_stm32h7xx.o
- .debug_info    0x000302de       0x88 startup\startup_stm32h743xx.o
+ .debug_info    0x00025f16     0x3e91 Src\main.o
+ .debug_info    0x00029da7     0x1062 Src\sd_diskio.o
+ .debug_info    0x0002ae09     0x329a Src\stm32h7xx_hal_msp.o
+ .debug_info    0x0002e0a3      0xf01 Src\stm32h7xx_it.o
+ .debug_info    0x0002efa4     0x1339 Src\system_stm32h7xx.o
+ .debug_info    0x000302dd       0x88 startup\startup_stm32h743xx.o
 
 .debug_abbrev   0x00000000     0x4e28
  .debug_abbrev  0x00000000      0x34f Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.o

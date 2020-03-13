@@ -27,11 +27,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 0000002e  00000000  00000000  000200d4  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00030366  00000000  00000000  00020102  2**0
+ 12 .debug_info   00030365  00000000  00000000  00020102  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 00004e28  00000000  00000000  00050468  2**0
+ 13 .debug_abbrev 00004e28  00000000  00000000  00050467  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    000117f5  00000000  00000000  00055290  2**0
+ 14 .debug_loc    000117f5  00000000  00000000  0005528f  2**0
                   CONTENTS, READONLY, DEBUGGING
  15 .debug_aranges 00001280  00000000  00000000  00066a88  2**3
                   CONTENTS, READONLY, DEBUGGING
@@ -16016,14 +16016,15 @@ void SystemClock_Config(void)
  8006c12:	f44f 4180 	mov.w	r1, #16384	; 0x4000
  8006c16:	4628      	mov	r0, r5
  8006c18:	f7fa f95d 	bl	8000ed6 <HAL_GPIO_TogglePin>
-	  HAL_Delay(1000);
- 8006c1c:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+	  HAL_Delay(100);
+ 8006c1c:	2064      	movs	r0, #100	; 0x64
 	  ld_cnt++;
- 8006c20:	3401      	adds	r4, #1
-	  HAL_Delay(1000);
- 8006c22:	f7f9 fd4f 	bl	80006c4 <HAL_Delay>
+ 8006c1e:	3401      	adds	r4, #1
+	  HAL_Delay(100);
+ 8006c20:	f7f9 fd50 	bl	80006c4 <HAL_Delay>
 	  if(ld_cnt % 2 == 0){
- 8006c26:	e7e1      	b.n	8006bec <main+0x21c>
+ 8006c24:	e7e2      	b.n	8006bec <main+0x21c>
+ 8006c26:	bf00      	nop
  8006c28:	58024400 	.word	0x58024400
  8006c2c:	58020400 	.word	0x58020400
  8006c30:	58020c00 	.word	0x58020c00
