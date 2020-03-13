@@ -200,12 +200,12 @@ int main(void)
 		  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 	  }
 
-	  if(ld_cnt % 4 == 0){
+	  if(ld_cnt % 5 == 0){
 		  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
 	  }
 	  ld_cnt++;
 
-	  HAL_Delay(100);
+	  HAL_Delay(50);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
