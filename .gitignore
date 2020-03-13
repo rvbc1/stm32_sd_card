@@ -1,5 +1,5 @@
 Debug/
 !.gitignore
-!Debug/SD_H7_062.binary
+!*.binary
 #
 #
