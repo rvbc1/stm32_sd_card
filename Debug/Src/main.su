@@ -1,5 +1,0 @@
-main.c:104:6:send_uart	8	static
-main.c:116:9:file_open	16	static
-main.c:220:6:SystemClock_Config	312	static
-main.c:156:5:main	72	static
-main.c:519:6:Error_Handler	0	static
