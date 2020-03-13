@@ -190,9 +190,21 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  int ld_cnt = 0;
   while (1)
   {
-	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	  if(ld_cnt % 2 == 0){
+		  HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+	  }
+	  if(ld_cnt % 3 == 0){
+		  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	  }
+
+	  if(ld_cnt % 4 == 0){
+		  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	  }
+	  ld_cnt++;
+
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
