@@ -1,1 +1,3 @@
-/Debug/
+Debug/
+!.gitignore
+!Debug/*.binary
