@@ -16016,11 +16016,11 @@ void SystemClock_Config(void)
  8006c1c:	f44f 4180 	mov.w	r1, #16384	; 0x4000
  8006c20:	4628      	mov	r0, r5
  8006c22:	f7fa f958 	bl	8000ed6 <HAL_GPIO_TogglePin>
-	  HAL_Delay(40);
- 8006c26:	2028      	movs	r0, #40	; 0x28
+	  HAL_Delay(50);
+ 8006c26:	2032      	movs	r0, #50	; 0x32
 	  ld_cnt++;
  8006c28:	3401      	adds	r4, #1
-	  HAL_Delay(40);
+	  HAL_Delay(50);
  8006c2a:	f7f9 fd4b 	bl	80006c4 <HAL_Delay>
 	  if(ld_cnt % 2 == 0){
  8006c2e:	e7dd      	b.n	8006bec <main+0x21c>
