@@ -205,7 +205,7 @@ int main(void)
 	  }
 	  ld_cnt++;
 
-	  HAL_Delay(20);
+	  HAL_Delay(30);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
